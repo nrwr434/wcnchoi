@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>최우찬 | 포트폴리오</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/lightbox.css">
+   <link rel="stylesheet" href="css/main.css">
+   
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+   <script src="js/lightbox.min.js"></script>
+   <script src="js/main.js"></script>
+</head>
+<body>
+   <div class="skip_nav">
+      <a href="#about">본문바로가기</a>
+   </div>
+   <header>
+      <h1><a href=""><span class="blind">최우찬 포트폴리오</span></a></h1>
+      <nav class="all_menu">
+         <button class="arrow"><span class="blind">접기</span></button>
+         <ul class="gnb">
+            <li><a href="#home">Home</a></li><!--href="javascript:void(0)"-->
+            <li><a href="#about">About Me</a></li>            
+            <li><a href="#project">Project</a>
+               <ul>
+                  <li><a href="javascript:void(0)">Coding</a></li>
+                  <li><a href="javascript:void(0)">Graphic</a></li>
+               </ul>
+            </li>
+         </ul>
+         <ul class="gnb_abo">
+            <li>최우찬</li>
+            <li>1999.11.12</li>
+            <li>wcnchoi@gmail.com</li>
+            <li><a href="https://open.kakao.com/o/sUTLzn6d">카카오톡 오픈채팅</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main id="main">
+      <section id="home">
+         <div class="container">
+            <h2 class="blind"><span>HOME</span></h2>
+            <div class="text_box">
+               <p>
+                  안녕하세요, <br>신입 웹디자이너 & 웹퍼블리셔 <br>최우찬 입니다.
+               </p>
+            </div><!--//.text_box-->
+            <div class="mouse">
+               <img src="img/mouse_.png" alt="scroll down" class="scroll">
+            </div>
+         </div><!--//.container-->
+      </section>
+      <section id="about">         
+         <div class="container">
+            <h2>                   
+               <p><span class="realistic-marker-highlight">ABOUT</span></p>               
+            </h2>
+            <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+               <defs>
+                 <filter id="marker-shape">
+                   <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+                   <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+                 </filter>
+               </defs>
+             </svg>
+            <!--<p class="main_txt">
+               무한한 성장 가능성을 가진 <br>
+               <span class="color_txt">"숨겨진 원석"</span>을 찾고 계시나요?
+            </p>-->
+            <div class="left_box_a">
+                  <h3>소개</h3>
+                  <ul>
+                     <li>최우찬</li>
+                     <li>서울시 관악구 거주</li>
+                     <li>1999.11.12</li>
+                     <li>wcnchoi@gmail.com</li>                     
+                  </ul>
+                  <h3>교육</h3>
+                  <ul>
+                     <li>2021.11.08 ~ 2022.04.07 <br>
+                        이젠 컴퓨터 아카데미 <br>
+                        (스마트웹&콘텐츠개발) 반응형 웹 UI/UX 콘텐츠 제작 전문가(BL)A 수료</li>
+                  </ul>
+                  <!-- <h3>자격증</h3>
+                  <ul>
+                     <li>ccc</li>
+                     <li>ddd</li>
+                  </ul> -->
+            </div>
+            <div class="right_box_a">
+               <h3>스킬</h3>
+               <ul>
+                  <li>
+                     <strong>PhotoShop + Illustrator</strong> <br>
+                     <p>사진 보정 및 로고, 배너, 아이콘 등의 디자인 작업을 할 수 있습니다.</p>
+                  </li>
+                  <li>
+                     <strong>HTML + CSS</strong> <br>
+                     <p>콘텐츠 내용에 알맞은 시맨틱 태그를 사용하여 코드를 작성합니다. <br>
+                     웹 표준 및 웹 접근성을 준수하여 반응형 레이아웃을 제작할 수 있습니다.</p>
+                  </li>
+                  <li>
+                     <strong>JavaScript + jQuery</strong> <br>
+                     <p>자바스크립트 문법을 이해하고 활용할 수 있습니다. <br> 
+                     제이쿼리를 활용하여 다양한 애니메이션과 기능을 구현할 수 있습니다.</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <section id="project">
+         <div class="container">
+            <!-- <h2>                   
+               <p><span class="realistic-marker-highlight">WORK</span></p>               
+            </h2> -->
+
+               <div class="work_tab">
+                  <button class="co_btn"><span>Coding</span> </button>
+                  <button class="gr_btn"><span>Graphic</span> </button>
+               </div><!--//.work_tab-->
+               <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+                  <defs>
+                    <filter id="marker-shape">
+                      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+                      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+                    </filter>
+                  </defs>
+                </svg>
+               <div class="work_contents clrfix">
+                  <div class="coding">
+                     <div class="c1">
+                        <div class="left_box_c">
+                           <strong>삐까뻔쩍 청소 리뉴얼 페이지</strong>
+                           <p>                        
+                              <span>기획 100% 퍼블리싱 100% 디자인 100% <br>
+                              반응형 웹페이지로 제작 </span>
+                              HTML, CSS, jQuery(플러그인 : slick.js)                              
+                           </p> 
+                           <a href="coding/ppikka/index.html" target="_blank"><span>메인 페이지 방문<img src="img/righarrow_w.png" alt=""></span></a>
+                           <a href="coding/ppikka/home_cleaning.html" target="_blank"><span>서브 페이지 방문<img src="img/righarrow_w.png" alt=""></span></a>
+                        </div>
+                        <div class="right_box_c">
+                           <!-- 백그라운드이미지 -->                        
+                        </div>
+                     </div><!--//.c1-->
+                     <div class="c2">
+                        <div class="left_box_c">
+                           <strong>그림같은 빵집 클론코딩 페이지</strong>
+                           <p>                        
+                              <span>퍼블리싱 100% <br></span>                                
+                              HTML, CSS                   
+                           </p> 
+                           <a href="coding/oksanga/index.html" target="_blank"><span>메인 페이지 방문<img src="img/righarrow_w.png" alt=""></span></a>
+                        </div>
+                        <div class="right_box_c">
+                           <!-- 백그라운드이미지 -->                        
+                        </div>
+                     </div>
+                  </div><!--//.coding-->
+                  <div class="graphic">
+                     <ul>
+                        <li><a href="graphic/neon_port.png" data-lightbox="pf" data-title="Ai 네온사인"><img src="graphic/neon_port.png" alt="네온사인"></a></li>
+                        <li><a href="graphic/cat_pt_or.png" data-lightbox="pf" data-title="Ai + Ps 고양이 마스크"><img src="graphic/cat_pt_or.png" alt="고양이 마스크"></a></li>
+                        <li><a href="graphic/card_g_s.png" data-lightbox="pf" data-title="Ai + Ps 명함"><img src="graphic/card_g_s.png" alt="명함"></a></li>
+                        <li><a href="graphic/logo_plus.png" data-lightbox="pf" data-title="Ai 자수"><img src="graphic/logo_plus.png" alt="자수"></a></li>
+                        <li><a href="graphic/cartoon_4.png" data-lightbox="pf" data-title="Ps 카툰"><img src="graphic/cartoon_4.png" alt="카툰"></a></li>
+                        <li><a href="img/ready.png" data-lightbox="pf" data-title="작업중"><img src="img/ready.png" alt="작업중"></a></li>
+                        <li><a href="img/ready.png" data-lightbox="pf" data-title="작업중"><img src="img/ready.png" alt="작업중"></a></li>
+                        <li><a href="img/ready.png" data-lightbox="pf" data-title="작업중"><img src="img/ready.png" alt="작업중"></a></li>
+                        <li><a href="img/ready.png" data-lightbox="pf" data-title="작업중"><img src="img/ready.png" alt="작업중"></a></li>
+                        <li><a href="img/ready.png" data-lightbox="pf" data-title="작업중"><img src="img/ready.png" alt="작업중"></a></li>
+                     </ul>
+                  </div><!--//.graphic-->
+               </div><!--//.work_contents-->
+            </div><!--//.container-->
+      </section>
+   </main>
+   <footer>
+      <p>이 사이트는 비상업적 용도로 제작된 포트폴리오 사이트입니다.</p>
+   </footer>
+</body>
+</html>

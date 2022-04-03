@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* common */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+   font-family: 'Montserrat', 'NanumSquare', 'Noto Sans KR', '맑은 고딕', 'Apple SD Gothic', 'Dotum', sans-serif;
+   font-size: 18px;
+}
+section {height: 100vh;}
+button {background: transparent;border: none;cursor: pointer;line-height: 1;font: inherit}
+.blind {display: block;width: 0;height: 0;overflow: hidden;}
+.container {width: 1200px;margin: auto;}
+.clrfix::after {content: "";display: block;clear: both;}
+
+/* skip_nav */
+.skip_nav a {display: block;position: absolute;left: 0;right: 0;top: -60px;padding: 10px;background: #000;color: #FFF;text-align: center;}
+.skip_nav a:focus {top: 0;}
+
+/* Header */
+header {}
+header h1 {}
+header h1 a {}
+
+header .all_menu {position: fixed;right: 0;top: 0;bottom: 0;line-height: 1.5;background: #ededed;transition: all 0.2s;z-index: 1000;}
+header .all_menu .arrow {position: absolute;left: -40px;top: 10px;width: 30px;height: 30px;background: url(../img/arrow_right.png) no-repeat center;background-size: contain;}
+header .all_menu .arrow.on {background: url(../img/arrow_left.png) no-repeat center;background-size: contain;}
+header .all_menu .gnb {padding: 150px 0;font-size: 24px;font-weight: bold;line-height: 3;}
+header .all_menu .gnb li {border-bottom: 1px solid #CCC;padding: 0 30px;}
+header .all_menu .gnb li ul {}
+header .all_menu .gnb li ul li {font-size: 18px;}
+header .all_menu .gnb li ul li:first-child {border-top: 1px solid #CCC;}
+header .all_menu .gnb li ul li:last-child {border-bottom: none;}
+header .all_menu .gnb li a:hover {color: #50b5b5;}
+header .all_menu .gnb_abo {padding: 0 30px;font-weight: 500;width: 200px;}
+header .all_menu .gnb_abo li {}
+
+/* footer */
+footer {padding: 30px 0;width: calc(100% - 260px);margin-top: 50px;border-top: 1px solid #CCC;}
+footer p {text-align: center;}
+
+
+/* main */
+main {width: calc(100% - 260px);}
+h2 {padding: 50px 0;font-size: 36px;font-weight: normal;text-align: center;}
+.realistic-marker-highlight{
+   position:relative;
+ }
+ 
+ .realistic-marker-highlight:before{
+   content:"";
+   background-color:#AEE0DD;
+   width:100%;
+   height:0.5em;
+   position:absolute;
+   z-index:-1;
+   filter:url(#marker-shape);
+   left:-0.25em;
+   /* top:0.1em; */
+   bottom: -4px;
+   padding:0 0.25em;
+ }
+
+/* #home */
+#home {text-align: center;position: relative;}
+#home .text_box {font-size: 28px;line-height: 3;margin-top: 100px;}
+
+@keyframes scroll {
+   0% {bottom: 100px;}
+   50% {bottom: 80px;}
+   100% {bottom: 100px;}
+}
+#home .mouse .scroll {height: 60px;position: absolute;left: 50%;bottom: 100px;transform: translateX(-50%);animation: scroll 1s infinite;}
+/* #ab   out */
+#about {}
+#about h2 {padding: 150px 0;}
+#about .main_txt {text-align: center;line-height: 1.7;font-size: 24px;}
+#about .left_box_a {float: left;margin-right: 100px;}
+#about .left_box_a h3 {font-size: 32px;margin-bottom: 20px;}
+#about h3::before {content: "";display: inline-block;vertical-align: top;width: 3px;height: 22px;background: #50b5b5;margin-right: 12px;margin-top: 5px;}
+#about .left_box_a ul {margin-bottom: 100px;}
+#about .left_box_a ul li {line-height: 1.5;}
+#about .right_box_a {float: right;}
+#about .right_box_a h3 {font-size: 32px;margin-bottom: 20px;}
+#about .right_box_a ul {float: right;}
+#about .right_box_a ul li {margin-bottom: 30px;line-height: 1.5;}
+#about .right_box_a ul li strong {font-size: 24px;display: inline-block;margin-bottom: 20px;}
+#about .right_box_a ul li strong::before {content: "";display: inline-block;vertical-align: middle;width: 3px;height: 3px;background: #666;margin-right: 6px;} 
+#about .right_box_a ul li p {}
+
+
+/* #project */
+#project {height: auto;}
+#project h2 {}
+#project .work_tab {overflow: hidden;padding: 10px;text-align: center;margin-bottom: 30px;}
+#project .work_tab button {padding: 10px 10px;margin: 0 15px;height: 50px;opacity: 0.7;}
+#project .work_tab .co_btn {background: url(../img/coding_on.png) no-repeat center top;background-size: auto 40px;height: 60px;opacity: 1;color: #50b5b5;font-weight: 600;}
+#project .work_tab .gr_btn {background: url(../img/graphic.png) no-repeat center top;background-size: auto 40px;}
+#project .work_tab button span {display: block;margin-top: 40px;}
+#project .work_contents {}
+#project .coding>div {border: 1px solid #dedede;height: 500px;margin-bottom: 30px;}
+#project .coding .c1 {}
+#project .coding {height: 500px;width: 1200px;box-sizing: border-box;color: #000;}
+#project .coding .left_box_c {width: 598px;height: 500px;text-align: left;line-height: 1.5;border-radius: 10px;box-sizing: border-box;padding-left: 60px;}
+#project .coding .left_box_c strong {padding: 90px 0 25px;display: block;font-size: 34px;}
+#project .coding .left_box_c p {font-size: 18px;margin-bottom: 30px;}
+#project .coding .left_box_c p span {display: block;margin-bottom: 40px;font-size: 20px;}
+#project .coding .right_box_c {width: 600px;height: 500px;position: relative;text-align: center;}
+/* #project .coding .c1 .left_box_c a {display: inline-block;border: 1px solid #333;padding: 0 50px;text-align: center;margin: 30px 0;} */
+#project .coding .left_box_c a {display: inline-block;background: rgba(0,0,0,0.3);transform: skewX(-15deg);padding: 15px 35px;text-align: center;margin: 30px 0;color: #FFF;}
+#project .coding .left_box_c a span {display: inline-block;transform: skewX(15deg);}
+#project .coding .left_box_c a span img {width: 12px;height: 12px;display: inline-block;background-size: contain;vertical-align: middle;margin-left: 10px;}
+#project .coding .c1 .left_box_c {float: left;}
+#project .coding .c1 .right_box_c {float: right;background: url(../img/ppikka.png) no-repeat center;background-position: 0 0;background-size: cover;}
+#project .coding .c2 .left_box_c {float: right;}
+#project .coding .c2 .right_box_c {float: left;background: url(../img/oksanga.png) no-repeat center;background-position: 0 0;background-size: cover;}
+#project .graphic {display: none;}
+#project .graphic ul {margin: auto;overflow: hidden;}
+#project .graphic ul li {float: left;margin-right: 20px;margin-bottom: 20px;border: 1px solid #dedede;width: calc(25% - 15px);box-sizing: border-box;}
+#project .graphic ul li:nth-child(4n) {margin-right: 0;}
+#project .graphic ul li img {display: block;width: 100%;}
