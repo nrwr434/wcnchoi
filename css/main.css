@@ -11,10 +11,12 @@ body {
    font-family: 'Montserrat', 'NanumSquare', 'Noto Sans KR', '맑은 고딕', 'Apple SD Gothic', 'Dotum', sans-serif;
    font-size: 18px;
 }
-section {height: 100vh;}
+/* section {height: 100vh;min-height: 700px;border: 1px solid red;} */
+section {min-height: 100vh;border: 1px solid red;}
 button {background: transparent;border: none;cursor: pointer;line-height: 1;font: inherit}
 .blind {display: block;width: 0;height: 0;overflow: hidden;}
 .container {width: 1200px;margin: auto;}
+.container::after {content: "";display: block;clear: both;}
 .clrfix::after {content: "";display: block;clear: both;}
 
 /* skip_nav */
@@ -27,8 +29,10 @@ header h1 {}
 header h1 a {}
 
 header .all_menu {position: fixed;right: 0;top: 0;bottom: 0;line-height: 1.5;background: #ededed;transition: all 0.2s;z-index: 1000;}
-header .all_menu .arrow {position: absolute;left: -40px;top: 10px;width: 30px;height: 30px;background: url(../img/arrow_right.png) no-repeat center;background-size: contain;}
-header .all_menu .arrow.on {background: url(../img/arrow_left.png) no-repeat center;background-size: contain;}
+header .all_menu .arrow {position: absolute;left: -35px;top: 10px;width: 30px;height: 30px;background: url(../img/arrow_right.png) no-repeat center;background-size: 15px auto;}
+header .all_menu .arrow.on {background: url(../img/arrow_left.png) no-repeat center;background-size: 15px auto;}
+/* header .all_menu .arrow {position: absolute;left: -55px;top: 220px;width: 80px;height: 30px;padding-left: 15px;font-size: 14px;transform: rotate(-90deg);background: url(../img/arrow_right.png) no-repeat left center;background-size: 10px auto;}
+header .all_menu .arrow.on {background: url(../img/arrow_left.png) no-repeat left center;background-size: 10px auto;} */
 header .all_menu .gnb {padding: 150px 0;font-size: 24px;font-weight: bold;line-height: 3;}
 header .all_menu .gnb li {border-bottom: 1px solid #CCC;padding: 0 30px;}
 header .all_menu .gnb li ul {}
@@ -66,7 +70,7 @@ h2 {padding: 50px 0;font-size: 36px;font-weight: normal;text-align: center;}
  }
 
 /* #home */
-#home {text-align: center;position: relative;}
+#home {text-align: center;position: relative;min-height: 700px}
 #home .text_box {font-size: 28px;line-height: 3;margin-top: 100px;}
 
 @keyframes scroll {
@@ -87,23 +91,25 @@ h2 {padding: 50px 0;font-size: 36px;font-weight: normal;text-align: center;}
 #about .right_box_a {float: right;}
 #about .right_box_a h3 {font-size: 32px;margin-bottom: 20px;}
 #about .right_box_a ul {float: right;}
-#about .right_box_a ul li {margin-bottom: 30px;line-height: 1.5;}
-#about .right_box_a ul li strong {font-size: 24px;display: inline-block;margin-bottom: 20px;}
+#about .right_box_a ul li {margin-bottom: 40px;line-height: 1.5;}
+#about .right_box_a ul li strong {font-size: 24px;display: block;margin-bottom: 10px;}
 #about .right_box_a ul li strong::before {content: "";display: inline-block;vertical-align: middle;width: 3px;height: 3px;background: #666;margin-right: 6px;} 
 #about .right_box_a ul li p {}
 
 
 /* #project */
-#project {height: auto;}
+#project {height: auto;padding: 60px 0;}
 #project h2 {}
 #project .work_tab {overflow: hidden;padding: 10px;text-align: center;margin-bottom: 30px;}
 #project .work_tab button {padding: 10px 10px;margin: 0 15px;height: 50px;opacity: 0.7;}
-#project .work_tab .co_btn {background: url(../img/coding_on.png) no-repeat center top;background-size: auto 40px;height: 60px;opacity: 1;color: #50b5b5;font-weight: 600;}
+#project .work_tab button.on {color: #50b5b5;font-weight: 600;opacity: 1;}
+#project .work_tab .co_btn {background: url(../img/coding.png) no-repeat center top;background-size: auto 40px;}
+#project .work_tab .co_btn.on {background-image: url(../img/coding_on.png)}
 #project .work_tab .gr_btn {background: url(../img/graphic.png) no-repeat center top;background-size: auto 40px;}
+#project .work_tab .gr_btn.on {background-image: url(../img/graphic_on.png)}
 #project .work_tab button span {display: block;margin-top: 40px;}
 #project .work_contents {}
-#project .coding>div {border: 1px solid #dedede;height: 500px;margin-bottom: 30px;}
-#project .coding .c1 {}
+#project .coding>div {border: 1px solid #AAA;height: 500px;margin-bottom: 30px;}
 #project .coding {height: 500px;width: 1200px;box-sizing: border-box;color: #000;}
 #project .coding .left_box_c {width: 598px;height: 500px;text-align: left;line-height: 1.5;border-radius: 10px;box-sizing: border-box;padding-left: 60px;}
 #project .coding .left_box_c strong {padding: 90px 0 25px;display: block;font-size: 34px;}
@@ -120,6 +126,5 @@ h2 {padding: 50px 0;font-size: 36px;font-weight: normal;text-align: center;}
 #project .coding .c2 .right_box_c {float: left;background: url(../img/oksanga.png) no-repeat center;background-position: 0 0;background-size: cover;}
 #project .graphic {display: none;}
 #project .graphic ul {margin: auto;overflow: hidden;}
-#project .graphic ul li {float: left;margin-right: 20px;margin-bottom: 20px;border: 1px solid #dedede;width: calc(25% - 15px);box-sizing: border-box;}
-#project .graphic ul li:nth-child(4n) {margin-right: 0;}
+#project .graphic ul li {float: left;margin: 0 10px;margin-bottom: 20px;border: 1px solid #dedede;width: calc(25% - 20px);box-sizing: border-box;}
 #project .graphic ul li img {display: block;width: 100%;}
