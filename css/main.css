@@ -12,7 +12,7 @@ body {
    font-size: 18px;
 }
 /* section {height: 100vh;min-height: 700px;border: 1px solid red;} */
-section {min-height: 100vh;border: 1px solid red;}
+section {min-height: 100vh;}
 button {background: transparent;border: none;cursor: pointer;line-height: 1;font: inherit}
 .blind {display: block;width: 0;height: 0;overflow: hidden;}
 .container {width: 1200px;margin: auto;}
@@ -70,7 +70,7 @@ h2 {padding: 50px 0;font-size: 36px;font-weight: normal;text-align: center;}
  }
 
 /* #home */
-#home {text-align: center;position: relative;min-height: 700px}
+#home {text-align: center;position: relative;min-height: 900px}
 #home .text_box {font-size: 28px;line-height: 3;margin-top: 100px;}
 
 @keyframes scroll {
