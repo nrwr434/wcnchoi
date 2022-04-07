@@ -33,6 +33,7 @@ header .all_menu .arrow {position: absolute;left: -35px;top: 10px;width: 30px;he
 header .all_menu .arrow.on {background: url(../img/arrow_left.png) no-repeat center;background-size: 15px auto;}
 /* header .all_menu .arrow {position: absolute;left: -55px;top: 220px;width: 80px;height: 30px;padding-left: 15px;font-size: 14px;transform: rotate(-90deg);background: url(../img/arrow_right.png) no-repeat left center;background-size: 10px auto;}
 header .all_menu .arrow.on {background: url(../img/arrow_left.png) no-repeat left center;background-size: 10px auto;} */
+header .all_menu p {padding: 0 30px;}
 header .all_menu .gnb {padding: 150px 0;font-size: 24px;font-weight: bold;line-height: 3;}
 header .all_menu .gnb li {border-bottom: 1px solid #CCC;padding: 0 30px;}
 header .all_menu .gnb li ul {}
@@ -41,7 +42,8 @@ header .all_menu .gnb li ul li:first-child {border-top: 1px solid #CCC;}
 header .all_menu .gnb li ul li:last-child {border-bottom: none;}
 header .all_menu .gnb li a:hover {color: #50b5b5;}
 header .all_menu .gnb_abo {padding: 0 30px;font-weight: 500;width: 200px;}
-header .all_menu .gnb_abo li {}
+header .all_menu .gnb_abo li img {width: 20px;height: 20px;vertical-align: middle;}
+header .all_menu .gnb_abo li:last-child {padding-right: 40px;}
 
 /* footer */
 footer {padding: 30px 0;width: calc(100% - 260px);margin-top: 50px;border-top: 1px solid #CCC;}
